@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event - Nova Nights</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="organized-by.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo-removebg-preview.png" alt="Nova Nights Logo" width="220" height="200" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Album">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">DESIGN</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="hero-content text-center text-white">
+      <h1>Nova Nights</h1>
+      <p>Experience the ultimate music events in Melbourne</p>
+      <a href="#events" class="hero-btn btn btn-primary">Explore Events</a>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-down text-center text-white">
+      <i class="fas fa-chevron-down fa-2x"></i>
+    </div>
+  </section>
+
+  <!-- Albums Section -->
+   
+  <section class="course container my-5" id="Album">
+    <h1>
+      <span class="color1">Recent</span>
+      <span class="color2">Albums</span>
+    </h1>
+    <div class="row">
+      <div class="col-md-4 album-card text-center">
+        <img src="album1.jpg" alt="Album 1" class="img-fluid rounded" />
+        <h3>Rhythm Rush</h3>
+      </div>
+      <div class="col-md-4 album-card text-center">
+        <img src="album2.jpg" alt="Album 2" class="img-fluid rounded" />
+        <h3>Neon Beats</h3>
+      </div>
+      <div class="col-md-4 album-card text-center">
+        <img src="album3.jpg" alt="Album 3" class="img-fluid rounded" />
+        <h3>Midnight Echo</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="event-section container my-5" id="events">
+    <h1 class="dual-color-heading text-center mb-4">
+      <span class="color1">Recent</span>
+      <span class="color2">Events</span>
+    </h1>
+
+    <div class="row g-4">
+      <!-- Event Card 1 -->
+      <div class="col-md-4 event-card p-3 border rounded">
+        <div class="event-details mb-2">
+          <span class="event-date">26 Sep 25</span>
+          <h3 class="event-title">Rhythm Rush</h3>
+          <span class="event-location">Melbourne, Australia</span>
+        </div>
+        <div class="event-countdown d-flex justify-content-around mb-3">
+          <div><span id="hours1">00</span><p>Hours</p></div>
+          <div><span id="minutes1">00</span><p>Min</p></div>
+          <div><span id="seconds1">00</span><p>Sec</p></div>
+        </div>
+        <div class="event-button text-center">
+          <a href="#" class="btn btn-gradient">Details</a>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="col-md-4 event-card p-3 border rounded">
+        <div class="event-details mb-2">
+          <span class="event-date">26 June 25</span>
+          <h3 class="event-title">Neon Beats</h3>
+          <span class="event-location">Melbourne, Australia</span>
+        </div>
+        <div class="event-countdown d-flex justify-content-around mb-3">
+          <div><span id="hours2">00</span><p>Hours</p></div>
+          <div><span id="minutes2">00</span><p>Min</p></div>
+          <div><span id="seconds2">00</span><p>Sec</p></div>
+        </div>
+        <div class="event-button text-center">
+          <a href="#" class="btn btn-gradient">Details</a>
+        </div>
+      </div>
+
+      <!-- Event Card 3 -->
+      <div class="col-md-4 event-card p-3 border rounded">
+        <div class="event-details mb-2">
+          <span class="event-date">30 June 25</span>
+          <h3 class="event-title">Midnight Echo</h3>
+          <span class="event-location">Melbourne, Australia</span>
+        </div>
+        <div class="event-countdown d-flex justify-content-around mb-3">
+          <div><span id="hours3">00</span><p>Hours</p></div>
+          <div><span id="minutes3">00</span><p>Min</p></div>
+          <div><span id="seconds3">00</span><p>Sec</p></div>
+        </div>
+        <div class="event-button text-center">
+          <a href="#" class="btn btn-gradient">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-lg custom-outline-btn">Check All</a>
+
+    </div>
+  </section>
+
+  <!-- Interactive Section -->
+  <section class="interactive-section container my-5 text-center">
+    <h3>Try Me!</h3>
+    <button id="colorBtn" class="btn btn-secondary">Click me to change color</button>
+  </section>
+
+  <script>
+    document.getElementById("colorBtn").addEventListener("click", function () {
+      this.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    });
+  </script>
+
+  <!-- Calculator Section -->
+  <section class="calculator-section container my-5 text-center">
+    <h3>Add Two Numbers</h3>
+    <input type="number" id="num1" placeholder="Number 1" class="form-control d-inline-block w-auto me-2" />
+    <input type="number" id="num2" placeholder="Number 2" class="form-control d-inline-block w-auto me-2" />
+    <button onclick="addNumbers()" class="btn btn-primary">Add</button>
+    <p id="sumResult" class="mt-3 fs-5"></p>
+  </section>
+
+  <script>
+    function addNumbers() {
+      const n1 = parseFloat(document.getElementById("num1").value);
+      const n2 = parseFloat(document.getElementById("num2").value);
+      if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById("sumResult").innerText = "Please enter valid numbers.";
+        return;
+      }
+      const result = n1 + n2;
+      document.getElementById("sumResult").innerText = "Sum: " + result;
+    }
+  </script>
+
+  <!-- Contact Section -->
+  <section class="contact-section container my-5" id="contact">
+    <div class="row">
+      <div class="col-md-5 contact-left mb-4">
+        <h1><span>Get</span> in touch.</h1>
+        <p>Fill in the form to start a conversation.</p>
+        <p><strong>contact@musicevent.app</strong></p>
+      </div>
+
+      <div class="col-md-7">
+        <form
+          id="contactForm"
+          class="contact-form"
+          action="https://formspree.io/f/yourFormID"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First Name"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Last Name"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <select name="profile" class="form-select" required>
+              <option value="" disabled selected>Choose Profile</option>
+              <option value="artist">Artist</option>
+              <option value="listener">Listener</option>
+              <option value="organizer">Organizer</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input type="file" name="resume" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <textarea
+              name="message"
+              placeholder="Comment"
+              rows="4"
+              class="form-control"
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+
+      try {
+        const response = await fetch(this.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          alert("Thank you for contacting us!");
+          this.reset();
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      } catch (error) {
+        alert("Network error. Please try again.");
+      }
+    });
+  </script>
+<!-- Video Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Music Video</h2>
+  <div class="text-center">
+    <video id="musicVideo" controls autoplay loop muted style="max-width: 100%; max-height: 400px; border-radius: 8px;">
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+<section class="gallery">
+  <div class="gallery-container">
+    <img src="image1.jpg" alt="Image 1" class="gallery-image active">
+    <img src="image2.jpg" alt="Image 2" class="gallery-image">
+    <img src="image3.jpg" alt="Image 3" class="gallery-image">
+    <!-- navigation arrows -->
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+  </div>
+</section>
+
+
+<script>
+  const images = document.querySelectorAll('.gallery-image');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  nextBtn.addEventListener('click', showNext);
+  prevBtn.addEventListener('click', showPrev);
+
+  
+  setInterval(showNext, 5000);
+</script>
+</body>
+</html>
+
+  <!-- Footer -->
+  <footer class="footer-section bg-dark text-white py-4">
+    <div class="container footer-container">
+      <div class="footer-top d-flex flex-wrap justify-content-between align-items-start mb-3">
+        <div class="footer-logo mb-3">
+          <a class="footer-brand" href="#">
+          <img src="logo-removebg-preview.png" alt="Nova Nights Logo" width="150" height="150" />
+        </a>
+        </div>
+        <div class="footer-links d-flex flex-wrap gap-5">
+          <div class="footer-column">
+            <h4>DOWNLOAD</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white"><i class="fab fa-android"></i> Android</a></li>
+              <li><a href="#" class="text-white"><i class="fab fa-apple"></i> iOS</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>FOLLOW US</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Instagram</a></li>
+              <li><a href="#" class="text-white">Tik Tok</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>LEGAL</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">General terms & Conditions</a></li>
+              <li><a href="#" class="text-white">Privacy Policy</a></li>
+              <li><a href="#" class="text-white">Intellectual Property Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2023 Music Event™. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Countdown Script -->
+  <script>
+    function startCountdown(eventDateStr, hoursId, minutesId, secondsId) {
+      const countDownDate = new Date(eventDateStr).getTime();
+
+      const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+
+        if (distance < 0) {
+          clearInterval(interval);
+          document.getElementById(hoursId).innerText = "00";
+          document.getElementById(minutesId).innerText = "00";
+          document.getElementById(secondsId).innerText = "00";
+          return;
+        }
+
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById(hoursId).innerText = hours.toString().padStart(2, "0");
+        document.getElementById(minutesId).innerText = minutes.toString().padStart(2, "0");
+        document.getElementById(secondsId).innerText = seconds.toString().padStart(2, "0");
+      }, 1000);
+    }
+
+    // Initialize countdowns for events
+    startCountdown("Sep 26, 2025 23:59:59", "hours1", "minutes1", "seconds1");
+    startCountdown("Jun 26, 2025 23:59:59", "hours2", "minutes2", "seconds2");
+    startCountdown("Jun 30, 2025 23:59:59", "hours3", "minutes3", "seconds3");
+    
+  </script>
+  
+
+</body>
+</html>
